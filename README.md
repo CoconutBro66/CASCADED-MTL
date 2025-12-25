@@ -1,4 +1,4 @@
-# CASCADED-MTL
+# TAMA: Target-Aware Multilingual Abuse Detection by Cascaded Conditional Multi-Task Learning
 
 
 ## Install Dependencies
