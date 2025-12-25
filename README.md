@@ -4,13 +4,20 @@
 ## Install Dependencies
 Create a conda environment using the provided .yaml file.
 
+## Dataset
+data文件夹中包含了我们实验所用到的数据集，其中no-target.jsonl为无指定目标数据集，不用于训练。
+所有数据集已经按8:1:1的比例划分好：
+Training Set:data/train.jsonl
+Dev Set:data/dev.jsonl
+Test Set:data/test.jsonl
+
 ## Source Code Structure
 完整实验可按文件夹名中的序号进行，也可以选择执行脚本
 <div>
   
 | # | Description |
 |-------|-------|
-| 01 | 其中，01为单任务的小模型微调实验代码，文件名分别对应各任务的实验代码 |
+| 01 | 01为单任务的小模型微调实验代码，文件名分别对应各任务的实验代码 |
 | 02 | 02为我们提出的CASCADED-MTL多任务框架实验代码，文件名分别对应各模块的实验代码 |
 | 03 | 03为单任务零样本大模型实验代码，文件名分别对应各任务的实验代码 |
 | 04 | 04为单任务大模型微调实验代码，文件名分别对应各任务的实验代码 |
