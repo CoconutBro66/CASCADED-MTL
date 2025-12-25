@@ -3,10 +3,11 @@
 
 ## Install Dependencies
 Create a conda environment using the provided .yaml file.
-```bash
+```
 conda env create --file=TAMA.yaml
 conda activate TAMA
-```bash
+```
+
 
 ## Dataset
 data文件夹中包含了我们实验所用到的数据集，其中`no-target.jsonl`为无指定目标数据集，不用于训练。<br>
