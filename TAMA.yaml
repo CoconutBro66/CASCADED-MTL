@@ -1,4 +1,4 @@
-name: GATE_QUST
+name: TAMA
 channels:
   - http://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
   - http://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
