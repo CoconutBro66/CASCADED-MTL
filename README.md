@@ -7,9 +7,9 @@ Create a conda environment using the provided .yaml file.
 ## Dataset
 data文件夹中包含了我们实验所用到的数据集，其中no-target.jsonl为无指定目标数据集，不用于训练。
 所有数据集已经按8:1:1的比例划分好：
--**Training Set:** 'data/train.jsonl'
--**Dev Set:** 'data/dev.jsonl'
--**Test Set:** 'data/test.jsonl'
+- **Training Set:** 'data/train.jsonl' <br>
+- **Dev Set:** 'data/dev.jsonl' <br>
+- **Test Set:** 'data/test.jsonl' <br>
 
 ## Source Code Structure
 完整实验可按文件夹名中的序号进行，也可以选择执行脚本
