@@ -15,6 +15,16 @@ data文件夹中包含了我们实验所用到的数据集，其中`no-target.js
 - **Training Set:** `data/train.jsonl` <br>
 - **Dev Set:** `data/dev.jsonl` <br>
 - **Test Set:** `data/test.jsonl` <br>
+其中各字段名解释如下
+| Field | Meaning |
+|---|---|
+| `id` | The unique identifier of the tweet (Tweet ID). |
+| `target` | The designated Twitter user (public figure) that this instance is paired with. |
+| `tri_label` | The Task 1 (T1) tri-class label: `non-abusive`, `targeted-abusive`, or `unidentified-targets`. |
+| `fine_label` | The Task 2 (T2) fine-grained abuse type label (only applicable when `tri_label` is `targeted-abusive`). |
+| `hate_phrases` | A list of annotated abusive spans in the text; each element corresponds to one abusive phrase span. |
+| `hate_phrases[].char_pos` | Character-level span position of an abusive phrase in the original text, formatted as `start-end` (e.g., `25-41`). |
+
 
 ## Source Code Structure
 完整实验可按文件夹名中的序号进行，也可以选择执行脚本
