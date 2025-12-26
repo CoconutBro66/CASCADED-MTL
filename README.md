@@ -43,5 +43,12 @@ data文件夹中包含了我们实验所用到的数据集，其中`no-target.js
 ### Running the Experiments
 各代码可在上述环境中直接运行，只需要更改模型及数据路径。
 代码运行结束后会保存相应的测试集评估结果。
+各文件运行代码命名如下
+```
+01_Single_Task:python t1.py python t2.py python t3.py
+02_CASCADED-MTL:python MTL_Base.py python CTF.py python CTF+TAG.py python CTF+TAG+LGSD.py
+03_zero-shot:python zero_t1.py python zero_t2.py python zero_t3.py
+04_fine-tune:python fine-tune_t1.py python fine-tune_t2.py python fine-tune_t3.py
+```
 
 
