@@ -27,6 +27,8 @@ data文件夹中包含了我们实验所用到的数据集，其中`no-target.js
 | `hate_phrases` | A list of annotated abusive spans in the text; each element corresponds to one abusive phrase span. |
 | `hate_phrases[].char_pos` | Character-level span position of an abusive phrase in the original text, formatted as `start-end` (e.g., `25-41`). |
 
+*Note: The dataset format we uploaded is already compatible with the code we uploaded. The only thing missing is the "text" field and the "content" field inside "T3_loc". After downloading the original text using the ID, simply fill these in by adding the text content. The "text" field should be inserted right after the "id" field, and the "context" field should be inserted in "T3_loc" right before "char_pos".* <br>
+
 
 ## Source Code Structure
 完整实验可按文件夹名中的序号进行，也可以选择执行脚本
