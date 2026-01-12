@@ -18,14 +18,13 @@ data文件夹中包含了我们实验所用到的数据集，其中`no-target.js
 
 其中各字段名解释如下
 
-| Field | Meaning |
+| Field | Description |
 |---|---|
 | `id` | The unique identifier of the tweet (Tweet ID). |
 | `target` | The designated Twitter user (public figure) that this instance is paired with. |
-| `tri_label` | The Task 1 (T1) tri-class label: `non-abusive`, `targeted-abusive`, or `unidentified-targets`. |
-| `fine_label` | The Task 2 (T2) fine-grained abuse type label (only applicable when `tri_label` is `targeted-abusive`). |
-| `hate_phrases` | A list of annotated abusive spans in the text; each element corresponds to one abusive phrase span. |
-| `hate_phrases[].char_pos` | Character-level span position of an abusive phrase in the original text, formatted as `start-end` (e.g., `25-41`). |
+| `T1_label` | The Task 1 (T1) tri-class label: `non-abusive`, `targeted-abusive`, or `unidentified-targets`. |
+| `T2_label` | The Task 2 (T2) fine-grained abuse type label (only applicable when `tri_label` is `targeted-abusive`). |
+| `T3_loc` |  Character-level span position of an abusive phrase in the original text, formatted as `start-end` (e.g., `25-41`). |
 
 *Note: The dataset format we uploaded is already compatible with the code we uploaded. The only thing missing is the "text" field and the "content" field inside "T3_loc". After downloading the original text using the ID, simply fill these in by adding the text content. The "text" field should be inserted right after the "id" field, and the "context" field should be inserted in "T3_loc" right before "char_pos".* <br>
 
