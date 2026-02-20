@@ -51,20 +51,7 @@ data文件夹中包含了我们实验所用到的数据集，其中`no-target.js
 **03_zero-shot:** `python zero_t1.py`  `python zero_t2.py`  `python zero_t3.py` <br>
 **04_fine-tune:** `python fine-tune_t1.py`  `python fine-tune_t2.py`  `python fine-tune_t3.py` <br>
 
-| Label | F1 (multilingual-e5-base) | F1 (mDeBERTa-v3-base) | F1 (XLM-RoBERTa-base) | Support |
-|-------|----------------------------|------------------------|------------------------|---------|
-| death_threat | 0.5217 | 0.7273 | 0.4 | 13 |
-| sexual_assault | 0.5 | 0 | 0.4 | 3 |
-| sexual_explicit | 0.4545 | 0.5517 | 0.4706 | 13 |
-| physical_harm | 0.4 | 0.1818 | 0.4 | 3 |
-| radiation_of_threats | 0.4 | 0 | 0 | 3 |
-| attacks_on_credibility | 0.7064 | 0.6736 | 0.7213 | 103 |
-| misogynistic | 0.72 | 0.5 | 0.4167 | 14 |
-| homophobic | 0.6667 | 0.4 | 0.6667 | 4 |
-| religious | 0.4 | 0.75 | 0.8 | 3 |
-| political_sectarian | 0.5 | 0.6 | 0.4706 | 10 |
-| racist | 0.6957 | 0.7143 | 0.6452 | 13 |
-| general | 0.7402 | 0.7203 | 0.6617 | 143 |
+
 
 
 
