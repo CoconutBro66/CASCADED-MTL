@@ -52,4 +52,17 @@ data文件夹中包含了我们实验所用到的数据集，其中`no-target.js
 **04_fine-tune:** `python fine-tune_t1.py`  `python fine-tune_t2.py`  `python fine-tune_t3.py` <br>
 
 
+| Text | T1 Gold → Pred | T2 Gold → Pred | T3 Gold Chunks → Pred Chunks | T3 F1 |
+|------|----------------|----------------|------------------------------|-------|
+| @trussliz @ZelenskyySurt out our own shit first, stupid wean. | targeted-abusive → targeted-abusive | general → general | [“stupid woman”] → [“stupid wean”] | 0 |
+| @trussliz You have no mandate, Resign or call a GeneralElection | targeted-abusive → targeted-abusive | attack_on_credibility → attack_on_credibility | [“no mandat”, “Resign”] → [“no mandat”, “Resign”] | 0 |
+| failed | targeted-abusive → non-abusive | general → general | [“sh*t”] → [“sh*t”] | 0 |
+| @theresa_may @theresa_may hope so Treason May | targeted-abusive → targeted-abusive | attack_on_credibility → attack_on_credibility | [“Treason May”] → [“Treason May”] | 0 |
+| T1 ☑️T2 ☑️ | targeted-abusive → targeted-abusive | general → physical_harm | [“gangster”] → [“gangster”] | 0 |
+| @theresa_may The UK will suffer greatly, under a bigoted criminal Tory | targeted-abusive → targeted-abusive | attack_on_credibility → political_secretism | [“will suffer greatly,” hope not!”] → [“The,” “will suffer greatly,” “-Tory- government”] | 0 |
+| terrorist run government. If you are elected again, let's hope not! | targeted-abusive → targeted-abusive | attack_on_credibility → attack_on_credibility | [“insider dealing”, “turn”] → [“insider dealing”, “turn”] | 0 |
+| @SimonClarkeM | targeted-abusive → targeted-abusive | attack_on_credibility → attack_on_credibility | [“insider dealing”, “turn”] → [“insider dealing”, “turn”] | 0 |
+| when he’s in jail for insider dealings? You could have your finger on the political pulse. U turn ahead | targeted-abusive → targeted-abusive | general → general | [“RU-PROF-frag”] → [“RU-PROF-frag”] | 0 |
+
+
 
