@@ -52,6 +52,20 @@ data文件夹中包含了我们实验所用到的数据集，其中`no-target.js
 **04_fine-tune:** `python fine-tune_t1.py`  `python fine-tune_t2.py`  `python fine-tune_t3.py` <br>
 
 
+| Label | F1 (multilingual-e5-base)  | Support |
+|-------|----------------------------|---------|
+| death_threat | 52.17  | 13 |
+| sexual_assault | 50.00 | 3 |
+| sexual_explicit | 45.45| 13 |
+| physical_harm | 40.00 |  3 |
+| radiation_of_threats | 40.00 | 3 |
+| attacks_on_credibility | 70.64 | 103 |
+| misogynistic | 72.00 | 14 |
+| homophobic | 66.67 | 4 |
+| religious | 40.00 | 3 |
+| political_sectarian | 50.00 | 10 |
+| racist | 69.57 | 13 |
+| general | 74.02  | 143 |
 
 
 
