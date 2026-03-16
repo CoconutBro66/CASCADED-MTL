@@ -73,15 +73,11 @@ Rebuttal：We agree that concrete qualitative examples can improve interpretabil
 |---|---|---|---|---|---|
 | succeeded | @trussliz @ZelenskyyUa Sort out our own sh1t first, stupid woman. | targeted-abusive → targeted-abusive | general → general | ["stupid woman"] → ["stupid woman"] | 1 |
 | succeeded | @rapplerdotcom @mariaressa Hindi nakaka proud! Fake news!!! | targeted-abusive → targeted-abusive | attacks_on_credibility → attacks_on_credibility | ["Fake news"] → ["Fake news"] | 1 |
-| succeeded | @trussliz You have no mandate. Resign or call a #GeneralElection | targeted-abusive → targeted-abusive | attacks_on_credibility → attacks_on_credibility | ["no mandat","Resign"] → ["no mandat","Resign"] | 1 |
-| failed | @Conservatives @theresa_may Tax burden always goes up under Tories, plus you destroy public services. I'm not voting for that. #GE2017 https://t.co/oefqNRcKFJ | targeted-abusive → non-abusive | political_sectarian → attacks_on_credibility | ["Tax burden … Tories","you destroy public services"] → [] | 0 |
 | failed | @Conservatives @theresa_may How did this shit get on my feed  | targeted-abusive → non-abusive | general → attacks_on_credibility | ["sh*t"] → [] | 0 |
 | failed | @theresa_may Legs hope so Treason May | targeted-abusive → non-abusive | general → attacks_on_credibility | ["Treason May"] → [] | 0 |
 | T1✅T2❌ | @theresa_may You're a gangster. | targeted-abusive → targeted-abusive | general → physical_harm | ["gangster"] → ["gangster"] | 1 |
-| T1✅T2❌ | @theresa_may The UK will suffer greatly, under a bigoted criminal Tory terrorist run government. if you are elected again. Lets hope not! | targeted-abusive → targeted-abusive | attacks_on_credibility → political_sectarian | ["will suffer greatly","hope not"] → ["The","will suffer greatly","…Tory…government"] | 0.381 |
 | T1✅T2❌ | @trussliz @UKinGuatemala Fuck off.  #NotMyWar | targeted-abusive → targeted-abusive | attacks_on_credibility → general | ["F*** off"] → ["F*** off"] | 1 |
 | T1✅T2✅T3❌ | @yulia_navalnaya А я ебуся с другом Алексея на острове. Юлия Навальная | targeted-abusive → targeted-abusive | sexual_explicit → sexual_explicit | ["yulia_navalnaya"] → ["[RU-EXPL]"] | 0 |
-| T1✅T2✅T3❌ | @SimonClarkeMP @KwasiKwarteng @trussliz @bbclaurak Will you visit him when he’s in jail for insider dealings? You clearly have your finger on the political pulse. U turn ahead | targeted-abusive → targeted-abusive | attacks_on_credibility → attacks_on_credibility | ["insider dealing","U turn"] → [] | 0 |
 | T1✅T2✅T3❌ | @VRSoloviev Чем обидели маленького? Какой бедныйпутинцы людей ракетами убивают, расстреливают, насилуют, а этот хер за красочку нюни распустил | targeted-abusive → targeted-abusive | general → general | ["[RU-PROF-frag]"] → [] | 0 |
 
 
