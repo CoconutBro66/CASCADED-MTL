@@ -52,33 +52,3 @@ data文件夹中包含了我们实验所用到的数据集，其中`no-target.js
 **04_fine-tune:** `python fine-tune_t1.py`  `python fine-tune_t2.py`  `python fine-tune_t3.py` <br>
 
 
-| Label | F1 (multilingual-e5-base)  | Support |
-|-------|----------------------------|---------|
-| death_threat | 52.17  | 13 |
-| sexual_assault | 50.00 | 3 |
-| sexual_explicit | 45.45| 13 |
-| physical_harm | 40.00 |  3 |
-| radiation_of_threats | 40.00 | 3 |
-| attacks_on_credibility | 70.64 | 103 |
-| misogynistic | 72.00 | 14 |
-| homophobic | 66.67 | 4 |
-| religious | 40.00 | 3 |
-| political_sectarian | 50.00 | 10 |
-| racist | 69.57 | 13 |
-| general | 74.02  | 143 |
-
-
-Rebuttal：We agree that concrete qualitative examples can improve interpretability. In the revision, we will add a compact case table that includes 2–3 representative instances for different outcome patterns across tasks, including: (i) all three tasks correct, (ii) all three tasks incorrect, (iii) T1 correct but T2 incorrect, and (iv) T1 & T2 correct but T3 incorrect. We select these cases from the test predictions using explicit criteria (e.g., T3 success/failure defined by token-level F1 thresholds(T3_SUCCESS_F1 = 0.95,T3_FAIL_F1= 0.05)) and report the corresponding gold vs. predicted outputs for T1/T2/T3.
-|   | Text | T1 Gold → Pred | T2 Gold → Pred | T3 Gold Chunks → Pred Chunks | T3 F1 |
-|---|---|---|---|---|---|
-| succeeded | @trussliz @ZelenskyyUa Sort out our own sh1t first, stupid woman. | targeted-abusive → targeted-abusive | general → general | ["stupid woman"] → ["stupid woman"] | 1 |
-| succeeded | @rapplerdotcom @mariaressa Hindi nakaka proud! Fake news!!! | targeted-abusive → targeted-abusive | attacks_on_credibility → attacks_on_credibility | ["Fake news"] → ["Fake news"] | 1 |
-| failed | @Conservatives @theresa_may How did this shit get on my feed  | targeted-abusive → non-abusive | general → attacks_on_credibility | ["sh*t"] → [] | 0 |
-| failed | @theresa_may Legs hope so Treason May | targeted-abusive → non-abusive | general → attacks_on_credibility | ["Treason May"] → [] | 0 |
-| T1✅T2❌ | @theresa_may You're a gangster. | targeted-abusive → targeted-abusive | general → physical_harm | ["gangster"] → ["gangster"] | 1 |
-| T1✅T2❌ | @trussliz @UKinGuatemala Fuck off.  #NotMyWar | targeted-abusive → targeted-abusive | attacks_on_credibility → general | ["F*** off"] → ["F*** off"] | 1 |
-| T1✅T2✅T3❌ | @yulia_navalnaya А я ебуся с другом Алексея на острове. Юлия Навальная | targeted-abusive → targeted-abusive | sexual_explicit → sexual_explicit | ["yulia_navalnaya"] → ["[RU-EXPL]"] | 0 |
-| T1✅T2✅T3❌ | @VRSoloviev Чем обидели маленького? Какой бедныйпутинцы людей ракетами убивают, расстреливают, насилуют, а этот хер за красочку нюни распустил | targeted-abusive → targeted-abusive | general → general | ["[RU-PROF-frag]"] → [] | 0 |
-
-
-
